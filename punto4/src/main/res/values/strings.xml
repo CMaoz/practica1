@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Calculadora de Resistencias</string>
+    <string name="primercolor">Primer franja</string>
+    <string name="segundocolor">Segunda franja</string>
+    <string name="tercercolor">Tercer franja</string>
+    <string name="cuartocolor">Cuarta franja</string>
+    <string name="valor">Valor:</string>
+    <string name="tolerancia">Tolerancia:</string>
+    <string name="calcular">Calcular</string>
+
+    <string-array name="primer_color_array">
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azúl</item>
+        <item>Violeta</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+    </string-array>
+
+    <string-array name="segundo_color_array">
+        <item>Negro</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azúl</item>
+        <item>Violeta</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+    </string-array>
+
+    <string-array name="tercer_color_array">
+        <item>Negro</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azúl</item>
+        <item>Violeta</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+        <item>Dorado</item>
+        <item>Plata</item>
+    </string-array>
+
+    <string-array name="cuarto_color_array">
+        <item>Plata</item>
+        <item>Dorado</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+    </string-array>
+
+</resources>

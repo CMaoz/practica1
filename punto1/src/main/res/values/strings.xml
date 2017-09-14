@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calculadora Geometrica</string>
+    <string name="area">Area</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="circulo">Circulo</string>
+    <string name="cubo">Cubo</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="lado">Lado</string>
+    <string name="radio">Radio</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+    <string name="lado2">Lado 2</string>
+    <string name="lado1">Lado 1</string>
+</resources>

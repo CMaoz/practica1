@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.punto2.MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/formulario"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/loggin"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/loggin"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/eLoggin"
+                android:inputType="textCapWords"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/password"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:gravity="center"
+                android:id="@+id/ePassword"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/repetirpassword"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repetirpassword"
+                android:gravity="center"
+                android:id="@+id/eRepetirPassword"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/correo"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo"
+                android:gravity="center"
+                android:id="@+id/eCorreo"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton android:id="@+id/rMasculino"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/masculino"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/white"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"
+                />
+
+
+            <RadioButton android:id="@+id/rFemenino"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/femenino"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/white"
+                android:onClick="onRadioButtonClicked"
+                />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fnacimiento"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="15sp"
+                android:id="@+id/bFnacimiento"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fecha"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/tFecha"
+                android:inputType="date"
+                />
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ciudad"
+               android:textColor="@color/white"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:layout_gravity="center_vertical"
+               />
+
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:id="@+id/sCiudad"
+               android:background="@color/white"
+               android:gravity="center"
+               android:layout_gravity="center"
+               />
+
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox android:id="@+id/cComer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="@string/comer"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                />
+
+            <CheckBox
+                android:id="@+id/cCine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:buttonTint="@color/white"
+                android:text="@string/cine"
+                android:textColor="@color/white" />
+
+            <CheckBox android:id="@+id/cDeportes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/deportes"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                />
+            <CheckBox android:id="@+id/cDormir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/dormir"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/bAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/aceptar"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:onClick="Aceptar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tInformacion"
+                android:text="@string/informacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

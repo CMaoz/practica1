@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.punto1.MainActivity"
+    android:background="@color/azure">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/area"
+            android:textColor="@color/red"
+            android:textSize="40sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:src="@drawable/cuadrado"
+            />
+
+        <ImageView
+            android:id="@+id/ImageView2"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:src="@drawable/circulo"
+            />
+
+        <ImageView
+            android:id="@+id/ImageView3"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:src="@drawable/cubo"
+            />
+
+        <ImageView
+            android:id="@+id/ImageView4"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:src="@drawable/triangulo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/rCuadrado"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cuadrado"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:onClick="onRadioButtonClicked"
+                />
+
+            <RadioButton android:id="@+id/rCirculo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/circulo"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:onClick="onRadioButtonClicked"
+                />
+
+            <RadioButton android:id="@+id/rCubo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cubo"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:onClick="onRadioButtonClicked"
+                />
+
+            <RadioButton android:id="@+id/rTriangulo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/triangulo"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:onClick="onRadioButtonClicked"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <EditText
+            android:id="@+id/eLado1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/lado1"
+            android:inputType="numberDecimal"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:gravity="center"/>
+
+
+
+        <EditText
+            android:id="@+id/eRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/radio"
+            android:inputType="numberDecimal"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+
+        <EditText
+            android:id="@+id/eBase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/base"
+            android:inputType="numberDecimal"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/eLado2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/lado2"
+            android:inputType="numberDecimal"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:textColor="@color/red"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:id="@+id/bCalcular"
+            android:onClick="Calcular"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            android:id="@+id/tResultado"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</ScrollView>
+

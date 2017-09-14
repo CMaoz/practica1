@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Formulario de Registro</string>
+    <string name="formulario">Formulario de Registro</string>
+    <string name="nombre">Nombres</string>
+    <string name="apellido">Apellidos</string>
+    <string name="loggin">Loggin</string>
+    <string name="password">Password</string>
+    <string name="repetirpassword">Repetir Password</string>
+    <string name="correo">Correo-e</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="fnacimiento">Fecha de nacimiento</string>
+    <string name="fecha">Fecha de naciemiento</string>
+    <string name="ciudad">Ciudad de nacimiento</string>
+    <string name="cine">Cine</string>
+    <string name="comer">Comer</string>
+    <string name="deportes">Deportes</string>
+    <string name="dormir">Dormir</string>
+    <string name="registrar">Registrar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="informacion">Informacion digitalizada</string>
+
+    <string-array name="ciudad_array">
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Pereira</item>
+        <item>Pasto</item>
+        <item>Leticia</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayán</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>San Andres</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+        <item>Segovia</item>
+    </string-array>
+</resources>
