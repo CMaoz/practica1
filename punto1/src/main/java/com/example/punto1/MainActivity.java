@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        
+
         eLado1 = (EditText) findViewById(R.id.eLado1);
         eRadio = (EditText) findViewById(R.id.eRadio);
         eBase = (EditText) findViewById(R.id.eBase);
